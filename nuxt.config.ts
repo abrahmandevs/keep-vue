@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  ssr: true,
   devtools: { enabled: true },
   css: ["~/styles/main.css"],
   //adding font through next plugIn

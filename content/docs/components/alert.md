@@ -1,0 +1,27 @@
+## Default Alert
+
+The Default Alert is a clean and simple design, ideal for conveying straightforward notifications without any elaborate visuals.
+
+::default-alert
+::
+
+## Default Alert
+
+The Default Alert is a clean and simple design, ideal for conveying straightforward notifications without any elaborate visuals.
+
+::default-alert
+::
+
+## Default Alert
+
+The Default Alert is a clean and simple design, ideal for conveying straightforward notifications without any elaborate visuals.
+
+::default-alert
+::
+
+## Default Alert
+
+The Default Alert is a clean and simple design, ideal for conveying straightforward notifications without any elaborate visuals.
+
+::default-alert
+::
