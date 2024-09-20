@@ -10,17 +10,12 @@ const metadata = reactive({
 });
 
 useHead({ ...metadata });
-
-const route = useRoute();
-const { data } = await useAsyncData(`pages${route.path}`, () =>
-  queryContent(route.path).findOne(),
-);
 </script>
 
 <template>
   <DocsContentLayout
     :title="metadata.title"
     :description="metadata.description">
-    <ContentRenderer class="col-span-12 lg:col-span-9" :value="data as any" />
+    <slot></slot>
   </DocsContentLayout>
 </template>

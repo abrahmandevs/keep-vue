@@ -18,8 +18,7 @@ defineProps<DocsContentLayout>();
         {{ description }}
       </p>
     </div>
-    <div id="mainContent">
-      <slot></slot>
-    </div>
+
+    <slot></slot>
   </div>
 </template>
