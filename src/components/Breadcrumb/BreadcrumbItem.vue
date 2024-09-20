@@ -1,23 +1,24 @@
 <script lang="ts" setup>
-import { ref, type HTMLAttributes } from "vue";
-import { isSlotValidHTMLElement } from "~/src/utils/slotUtils";
-import { cn } from "../../utils/cn";
+import { ref, type HTMLAttributes } from "vue"
+import { isSlotValidHTMLElement } from "../../utils/slotUtils"
+import { cn } from "../../utils/cn"
+import { useSlots } from "vue"
 
-interface BreadcrumbItemProps {
-  class?: HTMLAttributes["class"];
-  asChild?: boolean;
+export interface BreadcrumbItemProps {
+  class?: HTMLAttributes["class"]
+  asChild?: boolean
 }
 const props = withDefaults(defineProps<BreadcrumbItemProps>(), {
   asChild: false,
   class: "",
-});
+})
 
-const breadcrumbItemRef = ref<HTMLLIElement>();
+const breadcrumbItemRef = ref<HTMLLIElement>()
 const setAsChildRef = (value: HTMLLIElement) =>
-  (breadcrumbItemRef.value = value);
+  (breadcrumbItemRef.value = value)
 
-const slot = useSlots();
-const validElement = isSlotValidHTMLElement(slot);
+const slot = useSlots()
+const validElement = isSlotValidHTMLElement(slot)
 </script>
 <template>
   <slot

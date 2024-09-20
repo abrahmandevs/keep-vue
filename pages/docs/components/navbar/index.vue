@@ -15,8 +15,7 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
+    :description="metadata.description">
     Navbar
   </DocsContentLayout>
 </template>

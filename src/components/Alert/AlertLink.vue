@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { computed, ref } from "vue";
 import type { AnchorHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 import { useAlert } from "./useAlert";
 
-interface AlertLinkProps extends /* @vue-ignore */ AnchorHTMLAttributes {}
+export interface AlertLinkProps
+  extends /* @vue-ignore */ AnchorHTMLAttributes {}
 const props = withDefaults(defineProps<AlertLinkProps & ClassProps>(), {
   href: "#",
 });

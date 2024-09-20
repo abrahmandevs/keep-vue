@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { useProgressStore } from "./useProgressStore";
 
-interface LineProgressText {
+export interface LineProgressText {
   class?: HTMLAttributes["class"];
 }
 const props = defineProps<LineProgressText>();

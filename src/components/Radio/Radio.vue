@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { radioTheme } from "./radioTheme";
 
-interface RadioProps {
+export interface RadioProps {
   variant?: "circle" | "rounded" | "square";
   class?: HTMLAttributes["class"];
 }

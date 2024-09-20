@@ -1,10 +1,11 @@
 <script lang="ts" setup>
+import { computed, ref, useSlots } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { isSlotValidHTMLElement } from "../../utils/slotUtils";
 
-interface AvatarBadgeProps extends /*@vue-ignore*/ HTMLAttributes {
+export interface AvatarBadgeProps extends /*@vue-ignore*/ HTMLAttributes {
   asChild?: boolean;
 }
 const props = defineProps<AvatarBadgeProps & ClassProps>();

@@ -5,7 +5,7 @@ import DotButton from "./DotButton.vue";
 import type { ClassProps } from "./interface";
 import { useCarousel } from "./useCarousel";
 
-interface CarouselIndicatorsProps {
+export interface CarouselIndicatorsProps {
   dotButtonStyle?: string;
 }
 

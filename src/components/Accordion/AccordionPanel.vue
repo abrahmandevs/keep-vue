@@ -3,25 +3,26 @@ import {
   AccordionItem,
   type AccordionItemProps,
   useForwardProps,
-} from "radix-vue";
-import { cn } from "../../utils/cn";
-import type { ClassProps } from "../../utils/interface";
-import { accordionTheme } from "./accordionTheme";
-import { useAccordionStoreOrThrow } from "./useAccordionStore";
+} from "radix-vue"
+import { computed } from "vue"
+import { cn } from "../../utils/cn"
+import type { ClassProps } from "../../utils/interface"
+import { accordionTheme } from "./accordionTheme"
+import { useAccordionStoreOrThrow } from "./useAccordionStore"
 
-const props = defineProps<AccordionItemProps & ClassProps>();
+const props = defineProps<AccordionItemProps & ClassProps>()
 
 const restProps = computed(() => {
-  const { class: _, ...rest } = props;
+  const { class: _, ...rest } = props
 
-  return rest;
-});
+  return rest
+})
 
-const forwardedProps = useForwardProps(restProps);
+const forwardedProps = useForwardProps(restProps)
 
-const { panel } = accordionTheme;
+const { panel } = accordionTheme
 
-const { flush } = useAccordionStoreOrThrow()!;
+const { flush } = useAccordionStoreOrThrow()
 </script>
 
 <template>

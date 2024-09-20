@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { computed, ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { useProvideRatingStore } from "./useRatingStore";
 
-interface RatingProps {
+export interface RatingProps {
   handleRating?: (value: number | undefined) => void;
   class?: HTMLAttributes["class"];
 }

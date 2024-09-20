@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { computed } from "vue";
+import { DialogTitle } from "radix-vue";
 import { useForwardProps, type DialogTitleProps } from "radix-vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";

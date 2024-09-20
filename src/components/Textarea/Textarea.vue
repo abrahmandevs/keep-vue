@@ -1,9 +1,11 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { TextareaHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
-interface TextAreaProps extends /* @vue-ignore*/ TextareaHTMLAttributes {}
+export interface TextAreaProps
+  extends /* @vue-ignore*/ TextareaHTMLAttributes {}
 
 const props = defineProps<ClassProps & TextAreaProps>();
 

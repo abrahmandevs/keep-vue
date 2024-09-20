@@ -1,8 +1,9 @@
 <script lang="ts" setup>
+import { computed, ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
-interface NumberInputProps {
+export interface NumberInputProps {
   class?: HTMLAttributes["class"];
 }
 

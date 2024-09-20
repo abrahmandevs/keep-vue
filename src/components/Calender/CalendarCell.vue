@@ -3,18 +3,19 @@ import {
   CalendarCell,
   useForwardProps,
   type CalendarCellProps,
-} from "radix-vue";
-import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
+} from "radix-vue"
+import { computed } from "vue"
+import { cn } from "../../utils/cn"
+import type { ClassProps } from "../../utils/interface"
 
-const props = defineProps<CalendarCellProps & ClassProps>();
+const props = defineProps<CalendarCellProps & ClassProps>()
 
 const restProps = computed(() => {
-  const { class: _, ...rest } = props;
-  return rest;
-});
+  const { class: _, ...rest } = props
+  return rest
+})
 
-const forwardProps = useForwardProps(restProps);
+const forwardProps = useForwardProps(restProps)
 </script>
 
 <template>

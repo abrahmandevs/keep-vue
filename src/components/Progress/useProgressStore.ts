@@ -1,3 +1,7 @@
+import { createInjectionState } from "@vueuse/core";
+import type { ComputedRef, Ref } from "vue";
+import { ref, watch } from "vue";
+
 const [useProvideProgressStore, useProgressStore] = createInjectionState(
   (initialProgress: ComputedRef<number> | Ref<number>) => {
     //state

@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { computed } from "vue";
+import { PopoverArrow } from "radix-vue";
 import type { PopoverArrowProps } from "radix-vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";

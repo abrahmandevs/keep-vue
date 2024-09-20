@@ -3,7 +3,7 @@ import type { ButtonHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "./interface";
 
-interface DotButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
+export interface DotButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
   asChild?: boolean;
 }
 

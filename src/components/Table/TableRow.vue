@@ -1,8 +1,9 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
-interface TableRowProps {
+export interface TableRowProps {
   class?: HTMLAttributes["class"];
 }
 

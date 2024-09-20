@@ -4,6 +4,7 @@ import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import type { CommonUploadProps } from "./uploadInterface";
 import { useUpload } from "./useUpload";
+import { computed, watch } from "vue";
 
 const props = defineProps<CommonUploadProps & ClassProps>();
 const emit = defineEmits(["update:isDragActive"]);

@@ -3,7 +3,7 @@ import { cn } from "../../utils/cn";
 import { carouselTheme } from "./carouselTheme";
 import { useCarousel } from "./useCarousel";
 
-interface ViewPortProps {
+export interface ViewPortProps {
   viewPortClass?: string;
 }
 const props = defineProps<ViewPortProps>();

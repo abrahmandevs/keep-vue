@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import { useForwardPropsEmits } from "radix-vue";
 import {
   DrawerRoot,
@@ -8,7 +9,7 @@ import {
 } from "vaul-vue";
 import { useProvideDrawerStore } from "./useDrawerStore";
 
-interface DrawerProps {
+export interface DrawerProps {
   position?: DrawerDirection;
 }
 

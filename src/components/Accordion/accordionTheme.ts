@@ -1,39 +1,39 @@
-import { keepTw } from "~/src/utils/keepTw";
+import { keepTw } from "../../utils/keepTw"
 
 export interface KeepAccordionContainerTheme {
-  base: string;
-  open: string;
+  base: string
+  open: string
 }
 
 export interface KeepAccordionContentTheme {
-  base: string;
+  base: string
 }
 
 export interface KeepAccordionIconTheme {
-  base: string;
+  base: string
   rotated: {
-    full: string;
-    half: string;
-  };
+    full: string
+    half: string
+  }
 }
 
 export interface KeepAccordionPanelTheme {
   flush: {
-    on: string;
-    off: string;
-  };
+    on: string
+    off: string
+  }
 }
 
 export interface KeepAccordionTitleTheme {
-  base: string;
+  base: string
 }
 
 interface KeepAccordionTheme {
-  container: KeepAccordionContainerTheme;
-  content: KeepAccordionContentTheme;
-  icon: KeepAccordionIconTheme;
-  panel: KeepAccordionPanelTheme;
-  title: KeepAccordionTitleTheme;
+  container: KeepAccordionContainerTheme
+  content: KeepAccordionContentTheme
+  icon: KeepAccordionIconTheme
+  panel: KeepAccordionPanelTheme
+  title: KeepAccordionTitleTheme
 }
 
 export const accordionTheme: KeepAccordionTheme = keepTw({
@@ -60,4 +60,4 @@ export const accordionTheme: KeepAccordionTheme = keepTw({
   title: {
     base: "select-none text-left text-body-1 font-medium text-metal-900 dark:text-white",
   },
-});
+})

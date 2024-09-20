@@ -1,10 +1,11 @@
 <script lang="ts" setup>
+import { ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { progressTheme } from "./progressTheme";
 import { useProgressStore } from "./useProgressStore";
 
-interface CircleLineProps {
+export interface CircleLineProps {
   strokeWidth?: number;
   strokeColor?: string;
   class?: HTMLAttributes["class"];

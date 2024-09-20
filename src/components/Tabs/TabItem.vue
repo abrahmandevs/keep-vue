@@ -1,10 +1,11 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { ButtonHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { useTabs } from "./useTabs";
 
-interface TabItemProps extends /*@vue-ignore */ ButtonHTMLAttributes {
+export interface TabItemProps extends /*@vue-ignore */ ButtonHTMLAttributes {
   value: string;
   contentClassName?: string;
   bgClassName?: string;

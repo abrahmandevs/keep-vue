@@ -1,11 +1,13 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
-interface ModalFooterProps extends /*@vue-ignore*/ HTMLAttributes {}
+export interface NotificationFooterProps
+  extends /*@vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<ModalFooterProps & ClassProps>();
+const props = defineProps<NotificationFooterProps & ClassProps>();
 
 const restProps = computed(() => {
   const { class: _, ...rest } = props;

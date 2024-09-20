@@ -7,6 +7,7 @@ import {
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { accordionTheme } from "./accordionTheme";
+import { computed } from "vue";
 
 const props = defineProps<AccordionTriggerProps & ClassProps>();
 

@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
-interface AvatarTextProps extends /*@vue-ignore*/ HTMLAttributes {}
+export interface AvatarTextProps extends /*@vue-ignore*/ HTMLAttributes {}
 
 const props = defineProps<AvatarTextProps & ClassProps>();
 

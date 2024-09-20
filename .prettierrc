@@ -11,5 +11,6 @@
   "quoteProps": "as-needed",
   "arrowParens": "always",
   "htmlWhitespaceSensitivity": "ignore",
-  "singleAttributePerLine": false
+  "singleAttributePerLine": false,
+  "semi": false
 }

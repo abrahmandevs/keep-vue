@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { computed, ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import {
@@ -7,7 +8,7 @@ import {
   type SpinnerSizeVariant,
 } from "./spinnerTheme";
 
-interface SpinnerProps {
+export interface SpinnerProps {
   color?: keyof SpinnerColorVariant;
   size?: keyof SpinnerSizeVariant;
   class?: HTMLAttributes["class"];

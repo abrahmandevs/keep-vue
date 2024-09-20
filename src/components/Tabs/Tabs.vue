@@ -1,10 +1,11 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { useProvideTabsStore } from "./useTabs";
 
-interface TabsProps extends /* @vue-ignore */ HTMLAttributes {
+export interface TabsProps extends /* @vue-ignore */ HTMLAttributes {
   defaultActive?: string;
   variant?: "default" | "fill" | "underline";
 }

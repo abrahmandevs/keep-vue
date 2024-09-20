@@ -1,11 +1,12 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { HTMLAttributes } from "vue";
 import type { FileUploadOptions } from "vue3-dropzone";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { useProvideUpload } from "./useUpload";
 
-interface UploadProps extends /*@vue-ignore*/ HTMLAttributes {
+export interface UploadProps extends /*@vue-ignore*/ HTMLAttributes {
   horizontal?: boolean;
   options?: Partial<FileUploadOptions>;
 }

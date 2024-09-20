@@ -3,7 +3,7 @@ import { cn } from "../../utils/cn";
 import { carouselTheme } from "./carouselTheme";
 import type { ClassProps } from "./interface";
 
-interface CarouselItemProps {
+export interface CarouselItemProps {
   asChild?: boolean;
 }
 

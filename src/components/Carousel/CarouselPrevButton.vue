@@ -5,11 +5,12 @@ import { carouselTheme } from "./carouselTheme";
 import type { ClassProps } from "./interface";
 import { useCarousel } from "./useCarousel";
 
-interface ButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
+export interface PrevButtonProps
+  extends /* @vue-ignore */ ButtonHTMLAttributes {
   asChild?: boolean;
 }
 
-const props = defineProps<ButtonProps & ClassProps>();
+const props = defineProps<PrevButtonProps & ClassProps>();
 
 const { canScrollPrev, scrollPrev } = useCarousel();
 </script>

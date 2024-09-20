@@ -1,8 +1,9 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { OlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
-interface TimelineProps extends /*@vue-ignore*/ OlHTMLAttributes {}
+export interface TimelineProps extends /*@vue-ignore*/ OlHTMLAttributes {}
 
 const props = defineProps<TimelineProps & ClassProps>();
 

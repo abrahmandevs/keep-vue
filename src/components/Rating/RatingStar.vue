@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { useRatingStoreOrThrow } from "./useRatingStore";
 
-interface StarProps {
+export interface StarProps {
   value?: number;
   class?: HTMLAttributes["class"];
   inputStyle?: string;
@@ -17,8 +18,6 @@ const restProps = computed(() => {
   return delegated;
 });
 
-const ratingStarRef = ref<HTMLLabelElement | HTMLInputElement>();
-
 const { handleRating } = useRatingStoreOrThrow()!;
 </script>
 
@@ -26,6 +25,7 @@ const { handleRating } = useRatingStoreOrThrow()!;
   <input
     type="radio"
     :id="`hs-ratings-readonly-${value}`"
+    v-bind="restProps"
     :class="
       cn(
         'peer -ms-5 size-5 cursor-pointer appearance-none border-0 bg-transparent text-transparent checked:bg-none focus:bg-none focus:ring-0 focus:ring-offset-0',

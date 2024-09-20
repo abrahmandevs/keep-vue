@@ -1,10 +1,11 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { useTabs } from "./useTabs";
 
-interface TabContentProps extends /* @vue-ignore*/ HTMLAttributes {
+export interface TabContentProps extends /* @vue-ignore */ HTMLAttributes {
   value: string;
 }
 

@@ -8,7 +8,7 @@ import { Button, Input, InputIcon, Label } from "~/src";
     <fieldset class="space-y-1">
       <Label html-for="name">Email*</Label>
       <div class="relative">
-        <Input placeholder="Enter email" class="ps-11" />
+        <Input id="name" placeholder="Enter email" class="ps-11" />
         <InputIcon>
           <PhEnvelope :size="19" color="#AFBACA" />
         </InputIcon>
@@ -27,6 +27,6 @@ import { Button, Input, InputIcon, Label } from "~/src";
         </InputIcon>
       </div>
     </fieldset>
-    <Button size="sm" color="secondary" type="submit">Sign In</Button>
+    <Button color="secondary" type="submit">Sign In</Button>
   </form>
 </template>

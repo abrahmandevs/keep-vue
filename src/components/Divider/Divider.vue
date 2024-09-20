@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { ref, computed, useSlots } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
@@ -8,7 +9,7 @@ import {
   dividerTheme,
 } from "./theme";
 
-interface DividerProps {
+export interface DividerProps {
   color?: keyof DividerColorVariant;
   size?: keyof DividerSizeVariant;
   variant?: "start" | "end" | "center";

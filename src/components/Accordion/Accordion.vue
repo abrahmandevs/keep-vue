@@ -1,22 +1,21 @@
 <script lang="ts" setup>
+import { useProvideAccordionStore } from "./useAccordionStore"
 import {
   AccordionRoot,
   useForwardPropsEmits,
   type AccordionRootEmits,
   type AccordionRootProps,
-} from "radix-vue";
-import { useProvideAccordionStore } from "./useAccordionStore";
+} from "radix-vue"
 
-interface AccordionFlushProps {
-  flush?: boolean;
+export interface AccordionProps {
+  flush?: boolean
 }
 
-const props = defineProps<AccordionRootProps & AccordionFlushProps>();
-const emits = defineEmits<AccordionRootEmits>();
+const props = defineProps<AccordionRootProps & AccordionProps>()
+const emits = defineEmits<AccordionRootEmits>()
 
-const forwardProps = useForwardPropsEmits(props, emits);
-const flushProxyProps = computed(() => props.flush);
-useProvideAccordionStore(flushProxyProps);
+const forwardProps = useForwardPropsEmits(props, emits)
+useProvideAccordionStore(props.flush)
 </script>
 
 <template>

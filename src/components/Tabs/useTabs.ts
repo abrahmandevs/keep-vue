@@ -1,4 +1,8 @@
-interface TabsContextParameterType {
+import { createInjectionState } from "@vueuse/core";
+import type { Ref } from "vue";
+import { ref } from "vue";
+
+export interface TabsContextParameterType {
   defaultActive: string;
   variant: "default" | "fill" | "underline";
 }

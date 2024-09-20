@@ -2,7 +2,7 @@
 import type { HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
-interface DrawerHeaderProps {
+export interface DrawerHeaderProps {
   class?: HtmlHTMLAttributes["class"];
 }
 

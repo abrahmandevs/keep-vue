@@ -4,27 +4,26 @@ import {
   type CalendarRootEmits,
   type CalendarRootProps,
   useForwardPropsEmits,
-} from "radix-vue";
-import { computed } from "vue";
-import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
-import type { classesType } from "./CalendarTypes";
+} from "radix-vue"
+import { computed } from "vue"
+import { cn } from "../../utils/cn"
+import type { ClassProps } from "../../utils/interface"
+import type { classesType } from "./CalendarTypes"
 
-interface DatePickerClass {
-  classes?: classesType;
+export interface DatePickerClass {
+  classes?: classesType
 }
 
-const props = defineProps<CalendarRootProps & ClassProps & DatePickerClass>();
-
-const emits = defineEmits<CalendarRootEmits>();
+const props = defineProps<CalendarRootProps & ClassProps & DatePickerClass>()
+const emits = defineEmits<CalendarRootEmits>()
 
 const restProps = computed(() => {
-  const { class: _, classes, ...rest } = props;
+  const { class: _, classes, ...rest } = props
 
-  return rest;
-});
+  return rest
+})
 
-const forwarded = useForwardPropsEmits(restProps, emits);
+const forwarded = useForwardPropsEmits(restProps, emits)
 </script>
 
 <template>
@@ -94,5 +93,3 @@ const forwarded = useForwardPropsEmits(restProps, emits);
     </div>
   </CalendarRoot>
 </template>
-
-<!-- 'data-[selected]:bg-green-600 data-[selected]:text-white data-[selected]:opacity-100 data-[selected]:focus:bg-green-600', -->

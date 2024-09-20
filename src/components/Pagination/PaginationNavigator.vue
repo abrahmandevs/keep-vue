@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { paginationTheme } from "./paginationTheme";
 
-interface PaginationNavigatorProps {
+export interface PaginationNavigatorProps {
   shape?: "rounded" | "circle";
   asChild?: boolean;
   class?: HTMLAttributes["class"];

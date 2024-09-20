@@ -1,4 +1,6 @@
 const AlertStoreKey = "alert-store";
+import { createInjectionState } from "@vueuse/core";
+
 const [useProvideAlert, useInjectAlert] = createInjectionState(
   (color: string) => {
     return { color };

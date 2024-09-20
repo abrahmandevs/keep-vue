@@ -1,5 +1,8 @@
 // custom injectionKey
 const PaginationStoreKey = "pagination-store";
+import { createInjectionState } from "@vueuse/core";
+import type { ComputedRef, Ref } from "vue";
+import { ref } from "vue";
 
 const [useProvidePagination, usePaginationStore] = createInjectionState(
   (initialValue: ComputedRef<string> | Ref<string>) => {

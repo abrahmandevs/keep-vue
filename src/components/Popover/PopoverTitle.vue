@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
-interface PopoverTitleProps extends /*@vue-ignore*/ HTMLAttributes {}
+export interface PopoverTitleProps extends /*@vue-ignore*/ HTMLAttributes {}
 
 const props = defineProps<PopoverTitleProps & ClassProps>();
 

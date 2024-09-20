@@ -1,8 +1,9 @@
 <script lang="ts" setup>
+import { ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
-interface CardHeaderProps {
+export interface CardHeaderProps {
   class?: HTMLAttributes["class"];
 }
 const props = defineProps<CardHeaderProps>();

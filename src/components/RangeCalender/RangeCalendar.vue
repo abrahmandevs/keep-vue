@@ -4,30 +4,30 @@ import {
   type RangeCalendarRootEmits,
   type RangeCalendarRootProps,
   useForwardPropsEmits,
-} from "radix-vue";
-import { computed } from "vue";
-import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
-import type { classesType } from "../Calender/CalendarTypes";
-import RangeCalendarGrid from "./RangeCalendarGrid.vue";
+} from "radix-vue"
+import { computed } from "vue"
+import { cn } from "../../utils/cn"
+import type { ClassProps } from "../../utils/interface"
+import type { classesType } from "../Calender/CalendarTypes"
+import RangeCalendarGrid from "./RangeCalendarGrid.vue"
 
-interface DatePickerClass {
-  classes?: classesType;
+export interface DatePickerClassAttributes {
+  classes?: classesType
 }
 
 const props = defineProps<
-  RangeCalendarRootProps & ClassProps & DatePickerClass
->();
+  RangeCalendarRootProps & ClassProps & DatePickerClassAttributes
+>()
 
-const emits = defineEmits<RangeCalendarRootEmits>();
+const emits = defineEmits<RangeCalendarRootEmits>()
 
 const delegatedProps = computed(() => {
-  const { class: _, classes, ...delegated } = props;
+  const { class: _, classes, ...delegated } = props
 
-  return delegated;
-});
+  return delegated
+})
 
-const forwarded = useForwardPropsEmits(delegatedProps, emits);
+const forwarded = useForwardPropsEmits(delegatedProps, emits)
 </script>
 
 <template>

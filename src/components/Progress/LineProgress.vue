@@ -1,11 +1,12 @@
 <!-- RootComponent.vue -->
 <script setup lang="ts">
+import { computed, ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { progressTheme } from "./progressTheme";
 import { useProvideProgressStore } from "./useProgressStore";
 
-interface ProgressProps {
+export interface ProgressProps {
   progress?: number;
   class?: HTMLAttributes["class"];
 }

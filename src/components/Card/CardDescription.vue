@@ -1,25 +1,26 @@
 <script lang="ts" setup>
-import type { HTMLAttributes } from "vue";
-import { isSlotValidHTMLElement } from "~/src/utils/slotUtils";
-import { cn } from "../../utils/cn";
+import { ref, useSlots } from "vue"
+import type { HTMLAttributes } from "vue"
+import { isSlotValidHTMLElement } from "../../utils/slotUtils"
+import { cn } from "../../utils/cn"
 
-interface CardDescriptionProps {
-  class?: HTMLAttributes["class"];
-  asChild?: boolean;
+export interface CardDescriptionProps {
+  class?: HTMLAttributes["class"]
+  asChild?: boolean
 }
 
 const props = withDefaults(defineProps<CardDescriptionProps>(), {
   asChild: false,
   class: "",
-});
+})
 
 // get the ref
-const cardDescriptionRef = ref<HTMLElement | null>(null);
+const cardDescriptionRef = ref<HTMLElement | null>(null)
 const setAsChildRef = (value: HTMLElement | null) =>
-  (cardDescriptionRef.value = value);
+  (cardDescriptionRef.value = value)
 
-const slot = useSlots();
-const validElement = isSlotValidHTMLElement(slot);
+const slot = useSlots()
+const validElement = isSlotValidHTMLElement(slot)
 </script>
 
 <template>

@@ -1,10 +1,11 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { InputHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { inputTheme } from "./inputTheme";
 
-interface InputProps extends /*@vue-ignore*/ InputHTMLAttributes {
+export interface InputProps extends /*@vue-ignore*/ InputHTMLAttributes {
   type: string;
   placeholder: string;
 }

@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import { type TooltipArrowProps } from "radix-vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";

@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { HTMLAttributes, HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { skeletonTheme } from "./skeletonTheme";
 
-interface SkeletonProps extends /* @vue-ignore */ HTMLAttributes {
+export interface SkeletonProps extends /* @vue-ignore */ HTMLAttributes {
   animation?: boolean;
   class?: HtmlHTMLAttributes["class"];
 }

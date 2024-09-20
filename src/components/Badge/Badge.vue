@@ -3,7 +3,7 @@ import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { badgeTheme, badgeVariants } from "./badgeTheme";
 
-interface BadgeProps {
+export interface BadgeProps {
   color?: keyof typeof badgeTheme.color.base;
   variant?: keyof typeof badgeTheme.color;
 }

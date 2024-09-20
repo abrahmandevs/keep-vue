@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { stepPointTheme } from "./stepPointTheme";
 
-interface StepPointProps {
+export interface StepPointProps {
   variant?: "default" | "border" | "icon";
   completed?: boolean;
   class?: HtmlHTMLAttributes["class"];

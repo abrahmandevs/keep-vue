@@ -1,11 +1,12 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { SliderRootProps } from "radix-vue";
 import { SliderRange, SliderRoot, SliderTrack } from "radix-vue";
 
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
-interface SliderProps {
+export interface SliderProps {
   trackClass?: string;
   rangeClass?: string;
   thumbClass?: string;

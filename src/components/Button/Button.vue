@@ -1,5 +1,6 @@
 <!-- eslint-disable vue/require-default-prop -->
 <script lang="ts" setup>
+import { ref } from "vue";
 import type { ButtonHTMLAttributes, HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import {

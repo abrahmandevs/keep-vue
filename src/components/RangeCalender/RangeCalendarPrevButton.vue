@@ -3,20 +3,20 @@ import {
   RangeCalendarPrev,
   type RangeCalendarPrevProps,
   useForwardProps,
-} from "radix-vue";
-import { computed } from "vue";
-import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
+} from "radix-vue"
+import { computed } from "vue"
+import { cn } from "../../utils/cn"
+import type { ClassProps } from "../../utils/interface"
 
-const props = defineProps<RangeCalendarPrevProps & ClassProps>();
+const props = defineProps<RangeCalendarPrevProps & ClassProps>()
 
 const restProps = computed(() => {
-  const { class: _, ...rest } = props;
+  const { class: _, ...rest } = props
 
-  return rest;
-});
+  return rest
+})
 
-const forwardedProps = useForwardProps(restProps);
+const forwardedProps = useForwardProps(restProps)
 </script>
 
 <template>

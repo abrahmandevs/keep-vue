@@ -1,8 +1,9 @@
 <script lang="ts" setup>
+import { ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
-interface BreadcrumbProps {
+export interface BreadcrumbProps {
   class?: HTMLAttributes["class"];
   borderType?: "border-xy" | "border-y";
 }

@@ -1,8 +1,9 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import type { HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
-interface StepLineProps extends /* @vue-ignore */ HtmlHTMLAttributes {
+export interface StepLineProps extends /* @vue-ignore */ HtmlHTMLAttributes {
   completed?: boolean;
   stepLineBg?: string;
   class?: HtmlHTMLAttributes["class"];

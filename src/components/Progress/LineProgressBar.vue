@@ -1,10 +1,12 @@
 <script lang="ts" setup>
+import { ref } from "vue";
+
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { progressTheme } from "./progressTheme";
 import { useProgressStore } from "./useProgressStore";
 
-interface LineProgressBarProps {
+export interface LineProgressBarProps {
   class?: HTMLAttributes["class"];
   lineBackground?: string;
 }
@@ -18,7 +20,7 @@ const lineProgressBarRef = ref<HTMLDivElement>();
 
 <template>
   <div
-    ref=" lineProgressBarRef"
+    ref="lineProgressBarRef"
     v-bind="$attrs"
     :class="cn(line.progress.base, 'h-2.5', props.lineBackground)">
     <div

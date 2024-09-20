@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import { DialogTrigger, type DialogTriggerProps } from "radix-vue";
 import type { ClassProps } from "../../utils/interface";
 

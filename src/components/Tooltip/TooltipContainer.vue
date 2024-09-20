@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { defineOptions, withDefaults } from "vue";
 import {
   TooltipContent,
   type TooltipContentEmits,

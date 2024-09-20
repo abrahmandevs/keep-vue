@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import {
   PopoverContent,
   PopoverPortal,
@@ -9,7 +10,7 @@ import {
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../Carousel/interface";
 
-interface PopoverContentSideProps {
+export interface PopoverContentSideProps {
   side: "top" | "bottom" | "left" | "right";
 }
 

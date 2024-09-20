@@ -1,8 +1,9 @@
 <script lang="ts" setup>
+import { computed, ref } from "vue";
 import type { HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
-interface StepsProps {
+export interface StepsProps {
   class?: HtmlHTMLAttributes["class"];
 }
 

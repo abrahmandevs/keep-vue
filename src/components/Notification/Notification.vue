@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { computed } from "vue";
+import { DialogRoot } from "radix-vue";
 import {
   useForwardPropsEmits,
   type DialogRootEmits,
@@ -7,7 +9,7 @@ import {
 import type { NotificationPosition } from "./notificationTheme";
 import { useProvideNotification } from "./useNotification";
 
-interface NotificationProps {
+export interface NotificationProps {
   position?: NotificationPosition;
 }
 

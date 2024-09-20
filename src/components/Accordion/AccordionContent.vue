@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import { AccordionContent, type AccordionContentProps } from "radix-vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";

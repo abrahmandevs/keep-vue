@@ -1,10 +1,11 @@
 <script lang="ts" setup>
+import { ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { paginationTheme } from "./paginationTheme";
 import { usePagination } from "./usePaginationStore";
 
-interface PaginationItemProps {
+export interface PaginationItemProps {
   class?: HTMLAttributes["class"];
   asChild?: boolean;
   active?: boolean;

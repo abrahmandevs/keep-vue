@@ -1,10 +1,11 @@
 <script lang="ts" setup>
+import { computed, ref } from "vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { progressTheme } from "./progressTheme";
 import { useProvideProgressStore } from "./useProgressStore";
 
-interface ProgressCircleProps {
+export interface ProgressCircleProps {
   class?: HTMLAttributes["class"];
   progress?: number;
 }

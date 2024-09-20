@@ -1,4 +1,6 @@
 const DrawerStoreKey = "drawer-store";
+import { createInjectionState } from "@vueuse/core";
+import type { ComputedRef, Ref } from "vue";
 
 const [useProvideDrawerStore, useDrawerStore] = createInjectionState(
   (position: ComputedRef<string> | Ref<string>) => {
